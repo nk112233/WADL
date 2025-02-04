@@ -1,0 +1,233 @@
+html {
+    scroll-behavior: smooth;
+    background: #222a35;
+  }
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 4vw;
+
+
+}
+.nav-head{
+    padding-left: 10px;
+}
+.mid-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px;
+    gap: 16px;
+    
+}
+.aside-nav{
+    display: flex;
+    gap:20px
+    
+}
+.nav-links{
+    text-decoration: none;
+    color:whitesmoke;
+}
+.nav-links:hover{
+    color:violet;
+    cursor: pointer;
+    
+}
+.zfnt {
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+}
+
+#about{
+    padding: 4vw;
+    display: flex;
+    gap:10px;
+}
+.about-lf{
+    width: 50%;
+}
+
+.typewriter{
+    color:palegreen;
+    overflow: hidden; 
+    border-right: .15em solid rgb(255, 255, 255); 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+  
+.about-rt{
+    display: flex;
+    border-radius: 100%;
+    border: 10px violet;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.about-rt img{
+
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid red;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+        margin: 1rem;
+
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4vw;
+}
+.skill-box{
+    outline: none;
+    border-color: rgb(255, 129, 255);
+    box-shadow: 0 0 8px rgb(255, 132, 255);
+    box-shadow: rgba(255, 132, 255, 0.2) 0 0 90px 33px;
+    padding: 2vw;
+    border-radius: 12px;
+    display: flex;
+    gap:25px;
+}
+
+.skill-button{
+    border: 1px solid white;
+    box-shadow: 0 0 4px rgb(255, 216, 255);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.skill-button img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4vw;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row; 
+    gap: 25px;
+}
+.project-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 131, 131);
+    box-shadow: rgba(255, 112, 112, 0.2) 0 0 90px 33px;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 25%;
+    transition: transform .2s; /* Animation */
+}
+.project-card:hover{
+    transform: scale(1.05);
+}
+
+.project-card img{
+    width: 350px;
+    height: 200px;
+}
+
+.project-stack{
+    display: flex;
+    gap:4px;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+.project-stack span{
+    color:blueviolet;
+    background-color: rgb(255, 168, 255);
+    border-radius: 20px;
+    padding: 6px;
+}
+
+.project-card h3 a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+.project-card h3 a:hover{
+    color:palevioletred;
+    cursor: pointer;
+}
+
+#education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4vw;
+}
+
+.ed-cards{
+    display: flex;
+    flex-direction: column; 
+    gap: 25px;
+}
+
+.education-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 131, 131);
+    box-shadow: rgba(255, 112, 112, 0.2) 0 0 90px 33px;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform .2s; /* Animation */
+}
+
+.edu-head{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.edu-head div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.edu-head img{
+    width: 20%;
+    height: 70px;
+    border-radius: 50%;
+}
